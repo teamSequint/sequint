@@ -2946,6 +2946,7 @@ Parts Updated:
 <part name="RN1" library="nonolith" deviceset="RNETWORK" device=""/>
 <part name="LED1" library="microbuilder" deviceset="LED_RGB_PLCC6" device="CREE-CLV6A"/>
 <part name="R10" library="nonolith" deviceset="RESISTOR" device="0603" value="130o"/>
+<part name="JP1" library="nonolith" deviceset="HEADER-1X4" device="ROUND" value="PORTC"/>
 </parts>
 <sheets>
 <sheet>
@@ -2975,6 +2976,7 @@ Parts Updated:
 <instance part="R9" gate="G$1" x="38.1" y="38.1" rot="R90"/>
 <instance part="LED1" gate="G$1" x="83.82" y="38.1"/>
 <instance part="R10" gate="G$1" x="63.5" y="43.18"/>
+<instance part="JP1" gate="A" x="25.4" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -3076,6 +3078,11 @@ Parts Updated:
 <pinref part="LED1" gate="G$1" pin="RGND"/>
 <wire x1="96.52" y1="40.64" x2="99.06" y2="40.64" width="0" layer="91"/>
 <wire x1="99.06" y1="38.1" x2="99.06" y2="40.64" width="0" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="22.86" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
+<label x="12.7" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -3420,6 +3427,27 @@ Parts Updated:
 <pinref part="IC1" gate="PORTB_L" pin="PB5"/>
 <wire x1="30.48" y1="91.44" x2="33.02" y2="91.44" width="0" layer="91"/>
 <label x="33.02" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="IC1" gate="PORTC" pin="PC15"/>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="15.24" y1="25.4" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="IC1" gate="PORTC" pin="PC14"/>
+<wire x1="15.24" y1="22.86" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="2"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="IC1" gate="PORTC" pin="PC13"/>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="15.24" y1="20.32" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
