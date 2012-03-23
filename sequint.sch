@@ -2869,7 +2869,8 @@ Parts Updated:
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
+<clearance class="0" value="0.254"/>
 </class>
 </classes>
 <parts>
@@ -3755,8 +3756,6 @@ Parts Updated:
 <label x="12.7" y="53.34" size="1.778" layer="95" rot="R180"/>
 <pinref part="U4" gate="G$1" pin="IRQ"/>
 </segment>
-</net>
-<net name="IRQ" class="0">
 <segment>
 <pinref part="JPRF-A" gate="A" pin="1"/>
 <wire x1="-12.7" y1="83.82" x2="-17.78" y2="83.82" width="0" layer="91"/>
@@ -3814,39 +3813,6 @@ Parts Updated:
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="Q1" gate="G$1" pin="S"/>
-<pinref part="Q2" gate="G$1" pin="S"/>
-<wire x1="22.86" y1="43.18" x2="22.86" y2="38.1" width="0" layer="91"/>
-<wire x1="22.86" y1="38.1" x2="43.18" y2="38.1" width="0" layer="91"/>
-<wire x1="43.18" y1="38.1" x2="43.18" y2="43.18" width="0" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="S"/>
-<wire x1="43.18" y1="38.1" x2="66.04" y2="38.1" width="0" layer="91"/>
-<wire x1="66.04" y1="38.1" x2="66.04" y2="43.18" width="0" layer="91"/>
-<pinref part="Q4" gate="G$1" pin="S"/>
-<wire x1="66.04" y1="38.1" x2="88.9" y2="38.1" width="0" layer="91"/>
-<wire x1="88.9" y1="38.1" x2="88.9" y2="43.18" width="0" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="30.48" y1="45.72" x2="30.48" y2="43.18" width="0" layer="91"/>
-<wire x1="30.48" y1="43.18" x2="22.86" y2="43.18" width="0" layer="91"/>
-<pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="50.8" y1="45.72" x2="50.8" y2="43.18" width="0" layer="91"/>
-<wire x1="50.8" y1="43.18" x2="43.18" y2="43.18" width="0" layer="91"/>
-<pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="73.66" y1="45.72" x2="73.66" y2="43.18" width="0" layer="91"/>
-<wire x1="73.66" y1="43.18" x2="66.04" y2="43.18" width="0" layer="91"/>
-<pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="96.52" y1="45.72" x2="96.52" y2="43.18" width="0" layer="91"/>
-<wire x1="96.52" y1="43.18" x2="88.9" y2="43.18" width="0" layer="91"/>
-<junction x="22.86" y="43.18"/>
-<junction x="43.18" y="43.18"/>
-<junction x="66.04" y="43.18"/>
-<junction x="88.9" y="43.18"/>
-<junction x="66.04" y="38.1"/>
-<junction x="43.18" y="38.1"/>
-</segment>
-</net>
 <net name="VL-4" class="0">
 <segment>
 <pinref part="D4" gate="G$1" pin="C"/>
@@ -3929,6 +3895,38 @@ Parts Updated:
 <wire x1="144.78" y1="45.72" x2="149.86" y2="45.72" width="0" layer="91"/>
 <wire x1="144.78" y1="45.72" x2="144.78" y2="43.18" width="0" layer="91"/>
 <label x="144.78" y="43.18" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="22.86" y1="43.18" x2="22.86" y2="38.1" width="0" layer="91"/>
+<wire x1="22.86" y1="38.1" x2="43.18" y2="38.1" width="0" layer="91"/>
+<wire x1="43.18" y1="38.1" x2="43.18" y2="43.18" width="0" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="S"/>
+<wire x1="43.18" y1="38.1" x2="66.04" y2="38.1" width="0" layer="91"/>
+<wire x1="66.04" y1="38.1" x2="66.04" y2="43.18" width="0" layer="91"/>
+<pinref part="Q4" gate="G$1" pin="S"/>
+<wire x1="66.04" y1="38.1" x2="88.9" y2="38.1" width="0" layer="91"/>
+<wire x1="88.9" y1="38.1" x2="88.9" y2="43.18" width="0" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="30.48" y1="45.72" x2="30.48" y2="43.18" width="0" layer="91"/>
+<wire x1="30.48" y1="43.18" x2="22.86" y2="43.18" width="0" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="50.8" y1="45.72" x2="50.8" y2="43.18" width="0" layer="91"/>
+<wire x1="50.8" y1="43.18" x2="43.18" y2="43.18" width="0" layer="91"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="73.66" y1="45.72" x2="73.66" y2="43.18" width="0" layer="91"/>
+<wire x1="73.66" y1="43.18" x2="66.04" y2="43.18" width="0" layer="91"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="96.52" y1="45.72" x2="96.52" y2="43.18" width="0" layer="91"/>
+<wire x1="96.52" y1="43.18" x2="88.9" y2="43.18" width="0" layer="91"/>
+<junction x="22.86" y="43.18"/>
+<junction x="43.18" y="43.18"/>
+<junction x="66.04" y="43.18"/>
+<junction x="88.9" y="43.18"/>
+<junction x="66.04" y="38.1"/>
+<junction x="43.18" y="38.1"/>
+<label x="25.4" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
