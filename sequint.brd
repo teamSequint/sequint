@@ -143,9 +143,32 @@
 </polygon>
 <rectangle x1="33.782" y1="2.794" x2="57.15" y2="10.922" layer="21"/>
 <text x="16.256" y="7.62" size="1.27" layer="21" ratio="12">Nonolith Labs</text>
-<text x="16.256" y="5.334" size="1.27" layer="21" ratio="12">u4 roadkill</text>
+<text x="16.256" y="5.334" size="1.27" layer="21" ratio="12">μ4 roadkill</text>
 <text x="34.036" y="11.684" size="1.27" layer="21">rev, serial</text>
-<text x="3.048" y="17.78" size="5.08" layer="1" ratio="12">LOGO?</text>
+<text x="3.048" y="17.78" size="5.08" layer="25" ratio="12">LOGO?</text>
+<text x="38.608" y="36.576" size="1.016" layer="25">INT2_G</text>
+<text x="38.608" y="34.036" size="1.016" layer="25">INT1_G</text>
+<text x="38.608" y="31.496" size="1.016" layer="25">INT2_A</text>
+<text x="38.608" y="28.956" size="1.016" layer="25">INT1_A</text>
+<text x="38.608" y="26.416" size="1.016" layer="25">SPI1-SCK</text>
+<text x="38.608" y="23.876" size="1.016" layer="25">SPI1-MISO</text>
+<text x="38.608" y="21.336" size="1.016" layer="25">SPI1-MOSI</text>
+<text x="38.608" y="18.796" size="1.016" layer="25">CS_G</text>
+<text x="38.608" y="16.256" size="1.016" layer="25">CS_A</text>
+<text x="38.608" y="39.116" size="1.016" layer="25">GND</text>
+<text x="65.024" y="36.068" size="1.016" layer="25" align="bottom-right">GND</text>
+<text x="65.024" y="28.448" size="1.016" layer="25" align="bottom-right">TX</text>
+<text x="65.024" y="30.988" size="1.016" layer="25" align="bottom-right">RX</text>
+<text x="44.958" y="52.07" size="1.016" layer="25">NRF-IRQ</text>
+<text x="65.024" y="33.528" size="1.016" layer="25" align="bottom-right">3.3V</text>
+<text x="44.958" y="54.61" size="1.016" layer="25">MOSI</text>
+<text x="44.958" y="57.15" size="1.016" layer="25">NSS</text>
+<text x="44.958" y="59.69" size="1.016" layer="25">3.3V</text>
+<text x="39.878" y="59.69" size="1.016" layer="25" align="bottom-right">GND</text>
+<text x="39.878" y="57.15" size="1.016" layer="25" align="bottom-right">NRF-CE</text>
+<text x="39.878" y="54.61" size="1.016" layer="25" align="bottom-right">SCK</text>
+<text x="39.878" y="52.07" size="1.016" layer="25" align="bottom-right">MISO</text>
+<text x="43.688" y="49.784" size="1.016" layer="25" align="bottom-right">SPI2</text>
 </plain>
 <libraries>
 <library name="stm32">
@@ -1327,7 +1350,9 @@ design rules under a new name.</description>
 <element name="C9" library="nonolith" package="0603" value="22pF" x="58.5698" y="42.0522"/>
 <element name="R6" library="nonolith" package="0603" value="1M" x="53.9978" y="42.0522"/>
 <element name="R7" library="nonolith" package="0603" value="22K" x="52.2198" y="60.8482" rot="R180"/>
-<element name="C10" library="nonolith" package="0603" value="33nF" x="52.2198" y="58.5622" rot="R180"/>
+<element name="C10" library="nonolith" package="0603" value="33nF" x="52.2198" y="58.5622" smashed="yes" rot="R180">
+<attribute name="NAME" x="50.4418" y="58.3082" size="0.762" layer="25" font="vector" ratio="10" rot="R180"/>
+</element>
 <element name="L2" library="SparkFun" package="0603@1" value="2.7nH" x="59.0778" y="51.9582" rot="R90"/>
 <element name="C11" library="nonolith" package="0603" value="2.2nF" x="61.8718" y="51.1962"/>
 <element name="C12" library="nonolith" package="0603" value="4.7pF" x="61.8718" y="53.2282"/>
@@ -1340,7 +1365,10 @@ design rules under a new name.</description>
 <element name="JPRF-B" library="nonolith" package="1X04_ROUND" value="" x="41.12" y="56.2" rot="R270"/>
 <element name="BOOT" library="nonolith" package="1X02_ROUND" value="" x="11.148" y="46.04" rot="R180"/>
 <element name="R8" library="nonolith" package="0603" value="10ko" x="14.8564" y="45.6336" rot="R90"/>
-<element name="SERIAL" library="nonolith" package="1X04_ROUND" value="" x="66.294" y="32.766" rot="R90"/>
+<element name="SERIAL" library="nonolith" package="1X04_ROUND" value="" x="66.294" y="32.766" smashed="yes" rot="R90">
+<attribute name="NAME" x="69.0372" y="27.8638" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="69.469" y="27.686" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="Y1" library="nonolith" package="HC49UP" value="" x="24.2544" y="34.9656"/>
 <element name="C15" library="nonolith" package="0603" value="16pF" x="21.4604" y="30.9016" rot="R90"/>
 <element name="C16" library="nonolith" package="0603" value="16pF" x="27.0484" y="30.9016" rot="R90"/>
