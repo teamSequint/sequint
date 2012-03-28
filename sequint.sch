@@ -2870,7 +2870,7 @@ Parts Updated:
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.254" drill="0">
-<clearance class="0" value="0.254"/>
+<clearance class="0" value="0.1778"/>
 </class>
 </classes>
 <parts>
