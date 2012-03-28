@@ -3429,21 +3429,21 @@ Parts Updated:
 <label x="33.02" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="PC15" class="0">
 <segment>
 <pinref part="IC1" gate="PORTC" pin="PC15"/>
 <pinref part="JP1" gate="A" pin="1"/>
 <wire x1="15.24" y1="25.4" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="PC14" class="0">
 <segment>
 <pinref part="IC1" gate="PORTC" pin="PC14"/>
 <wire x1="15.24" y1="22.86" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="2"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="PC13" class="0">
 <segment>
 <pinref part="IC1" gate="PORTC" pin="PC13"/>
 <pinref part="JP1" gate="A" pin="3"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -131,9 +131,7 @@
 <wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
 <rectangle x1="33.782" y1="2.794" x2="57.15" y2="10.922" layer="21"/>
 <text x="16.256" y="7.62" size="1.27" layer="21" ratio="12">Nonolith Labs</text>
-<text x="16.256" y="5.334" size="1.27" layer="21" ratio="12">μ4 roadkill</text>
-<text x="34.036" y="11.684" size="1.27" layer="21">rev, serial</text>
-<text x="3.048" y="17.78" size="5.08" layer="25" ratio="12">LOGO?</text>
+<text x="16.256" y="5.334" size="1.27" layer="21" ratio="12">μ4 roadkill 0.1</text>
 <text x="38.608" y="36.576" size="1.016" layer="25">INT2_G</text>
 <text x="38.608" y="34.036" size="1.016" layer="25">INT1_G</text>
 <text x="38.608" y="31.496" size="1.016" layer="25">INT2_A</text>
@@ -157,6 +155,15 @@
 <text x="39.878" y="54.61" size="1.016" layer="25" align="bottom-right">SCK</text>
 <text x="39.878" y="52.07" size="1.016" layer="25" align="bottom-right">MISO</text>
 <text x="43.688" y="49.784" size="1.016" layer="25" align="bottom-right">SPI2</text>
+<text x="10.414" y="41.402" size="1.016" layer="25" rot="R180">GND</text>
+<text x="10.414" y="38.862" size="1.016" layer="25" rot="R180">PC13</text>
+<text x="10.414" y="36.322" size="1.016" layer="25" rot="R180">PC14</text>
+<text x="10.414" y="33.782" size="1.016" layer="25" rot="R180">PC15</text>
+<text x="51.816" y="72.898" size="1.016" layer="25" rot="R90">GND</text>
+<text x="49.276" y="72.898" size="1.016" layer="25" rot="R90">3.3V</text>
+<text x="46.736" y="72.898" size="1.016" layer="25" rot="R90">REG_IN</text>
+<text x="44.196" y="72.898" size="1.016" layer="25" rot="R90">BATT</text>
+<text x="41.656" y="72.898" size="1.016" layer="25" rot="R90">5V USB</text>
 </plain>
 <libraries>
 <library name="stm32">
@@ -1349,8 +1356,12 @@ design rules under a new name.</description>
 <element name="L3" library="SparkFun" package="0603@1" value="8.2nH" x="57.1728" y="53.7362" rot="R90"/>
 <element name="U4" library="SparkFun" package="QFN20" value="NRF24L01SMD" x="53.4898" y="53.7362"/>
 <element name="ANT1" library="adafruit" package="RN-ANT" value="ANTENNA" x="63.98" y="58.486" rot="R180"/>
-<element name="JPRF-A" library="nonolith" package="1X04_ROUND" value="" x="43.66" y="56.2" rot="R90"/>
-<element name="JPRF-B" library="nonolith" package="1X04_ROUND" value="" x="41.12" y="56.2" rot="R270"/>
+<element name="JPRF-A" library="nonolith" package="1X04_ROUND" value="" x="43.66" y="56.2" smashed="yes" rot="R90">
+<attribute name="VALUE" x="46.835" y="51.12" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JPRF-B" library="nonolith" package="1X04_ROUND" value="" x="41.12" y="56.2" smashed="yes" rot="R270">
+<attribute name="VALUE" x="37.945" y="61.28" size="1.27" layer="27" rot="R270"/>
+</element>
 <element name="BOOT" library="nonolith" package="1X02_ROUND" value="" x="11.148" y="46.04" rot="R180"/>
 <element name="R8" library="nonolith" package="0603" value="10ko" x="14.8564" y="45.6336" rot="R90"/>
 <element name="SERIAL" library="nonolith" package="1X04_ROUND" value="" x="66.294" y="32.766" smashed="yes" rot="R90">
@@ -1367,12 +1378,14 @@ design rules under a new name.</description>
 <element name="C20" library="nonolith" package="1206" value=".01uF" x="58.646" y="32.451" rot="R180"/>
 <element name="C21" library="nonolith" package="0603" value=".1uF" x="58.646" y="34.737" rot="R180"/>
 <element name="C22" library="nonolith" package="0603" value="1uF" x="58.646" y="37.023" rot="R180"/>
-<element name="PWR" library="nonolith" package="1X05_ROUND" value="" x="46.2" y="71.44"/>
+<element name="PWR" library="nonolith" package="1X05_ROUND" value="" x="46.2" y="71.44" smashed="yes">
+<attribute name="VALUE" x="39.85" y="68.265" size="1.27" layer="27"/>
+</element>
 <element name="LSM330_BRK" library="nonolith" package="1X10_ROUND" value="" x="37.338" y="28.194" rot="R90"/>
 <element name="RN1" library="nonolith" package="RN8P-4R-CRA06S" value="" x="38.58" y="65.344" rot="R270"/>
 <element name="LED1" library="microbuilder" package="RGBLED_PLCC6" value="" x="16.3804" y="59.8576" rot="R180"/>
 <element name="R10" library="nonolith" package="0603" value="130o" x="20.4444" y="58.3336" rot="R90"/>
-<element name="JP1" library="nonolith" package="1X04_ROUND" value="PORTC" x="11.91" y="37.15" rot="R90"/>
+<element name="JP1" library="nonolith" package="1X04_ROUND" value="PORTC" x="11.91" y="37.15" smashed="yes" rot="R90"/>
 </elements>
 <signals>
 <signal name="CS_A">
@@ -2609,7 +2622,7 @@ design rules under a new name.</description>
 <contactref element="U1" pad="8"/>
 <contactref element="LSM330_BRK" pad="7"/>
 <via x="46.708" y="25.847" extent="1-16" drill="0.3302"/>
-<wire x1="37.338" y1="32.004" x2="40.612" y2="31.943" width="0.3048" layer="16"/>
+<wire x1="37.338" y1="32.004" x2="40.612" y2="31.943" width="0.254" layer="16"/>
 <wire x1="40.612" y1="31.943" x2="46.708" y2="25.847" width="0.254" layer="16"/>
 <wire x1="46.708" y1="25.847" x2="48.002" y2="27.141" width="0.254" layer="1"/>
 <wire x1="48.002" y1="27.141" x2="50.042" y2="27.141" width="0.254" layer="1"/>
@@ -2641,7 +2654,7 @@ design rules under a new name.</description>
 <wire x1="54.582" y1="37.531" x2="52.296" y2="37.531" width="0.3048" layer="1"/>
 <wire x1="52.296" y1="37.619" x2="52.296" y2="37.531" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$1">
+<signal name="PC15">
 <contactref element="IC1" pad="4"/>
 <contactref element="JP1" pad="1"/>
 <wire x1="23.5124" y1="43.6736" x2="23.5124" y2="40.7844" width="0.254" layer="1"/>
@@ -2650,7 +2663,7 @@ design rules under a new name.</description>
 <wire x1="15.748" y1="37.084" x2="12.004" y2="33.34" width="0.254" layer="1"/>
 <wire x1="12.004" y1="33.34" x2="11.91" y2="33.34" width="0.254" layer="1"/>
 </signal>
-<signal name="N$4">
+<signal name="PC14">
 <contactref element="IC1" pad="3"/>
 <contactref element="JP1" pad="2"/>
 <wire x1="23.0124" y1="43.6736" x2="23.0124" y2="41.0464" width="0.254" layer="1"/>
@@ -2661,7 +2674,7 @@ design rules under a new name.</description>
 <wire x1="11.91" y1="35.88" x2="11.938" y2="35.852" width="0.254" layer="1"/>
 <wire x1="11.938" y1="35.852" x2="11.938" y2="35.814" width="0.254" layer="1"/>
 </signal>
-<signal name="N$6">
+<signal name="PC13">
 <contactref element="IC1" pad="2"/>
 <contactref element="JP1" pad="3"/>
 <wire x1="22.5124" y1="43.6736" x2="22.5124" y2="41.3084" width="0.254" layer="1"/>
