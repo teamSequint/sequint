@@ -496,7 +496,6 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <wire x1="-1.62" y1="0.34" x2="-1.62" y2="0.35" width="0.127" layer="51"/>
 <circle x="2.7" y="1" radius="0.1204" width="0.127" layer="21"/>
 <circle x="-1.62" y="0.33" radius="0.2404" width="0.127" layer="51"/>
-<smd name="P$1" x="-2.7" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
 <smd name="P$2" x="-2.1" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
 <smd name="P$3" x="-1.5" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
 <smd name="P$4" x="-0.9" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
@@ -505,11 +504,6 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <smd name="P$7" x="0.9" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
 <smd name="P$8" x="1.5" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
 <smd name="P$9" x="2.1" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$10" x="2.7" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$11" x="3.55" y="0.3" dx="1" dy="0.4" layer="1"/>
-<smd name="P$13" x="3.55" y="0.9" dx="1" dy="0.4" layer="1" rot="R180"/>
-<smd name="P$12" x="-3.55" y="0.3" dx="1" dy="0.4" layer="1"/>
-<smd name="P$14" x="-3.55" y="0.9" dx="1" dy="0.4" layer="1"/>
 <smd name="10" x="-2.7" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
 <smd name="9" x="-2.1" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
 <smd name="8" x="-1.5" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
@@ -524,20 +518,7 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <smd name="28" x="3.55" y="0.9" dx="1" dy="0.4" layer="1" rot="R180"/>
 <smd name="12" x="-3.55" y="0.3" dx="1" dy="0.4" layer="1"/>
 <smd name="11" x="-3.55" y="0.9" dx="1" dy="0.4" layer="1"/>
-<smd name="P$29" x="2.7" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
-<smd name="P$30" x="2.1" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
-<smd name="P$31" x="1.5" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
-<smd name="P$32" x="0.9" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
 <smd name="P$33" x="0.3" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
-<smd name="P$34" x="-0.3" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
-<smd name="P$35" x="-0.9" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
-<smd name="P$36" x="-1.5" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
-<smd name="P$37" x="-2.1" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
-<smd name="P$38" x="-2.7" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
-<smd name="P$39" x="-3.55" y="-0.3" dx="1" dy="0.4" layer="1" rot="R180"/>
-<smd name="P$40" x="-3.55" y="-0.9" dx="1" dy="0.4" layer="1"/>
-<smd name="P$41" x="3.55" y="-0.3" dx="1" dy="0.4" layer="1" rot="R180"/>
-<smd name="P$42" x="3.55" y="-0.9" dx="1" dy="0.4" layer="1" rot="R180"/>
 <smd name="24" x="2.7" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
 <smd name="23" x="2.1" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
 <smd name="22" x="1.5" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
