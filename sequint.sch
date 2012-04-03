@@ -2732,62 +2732,6 @@ Epson Toyocom FCC-255</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="adafruit">
-<packages>
-<package name="RN-ANT">
-<wire x1="-4.3942" y1="-0.2032" x2="-4.3942" y2="2.159" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="4.3434" x2="-1.7526" y2="4.3434" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="4.3434" x2="-1.7526" y2="6.858" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="6.858" x2="-4.3942" y2="6.858" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="6.858" x2="-4.3942" y2="9.0678" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="9.0678" x2="-1.7526" y2="9.0678" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="9.0678" x2="-1.7526" y2="11.5824" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="11.5824" x2="-4.3942" y2="11.5824" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="11.5824" x2="-4.3942" y2="13.7922" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="13.7922" x2="-2.7432" y2="13.7922" width="0.508" layer="1"/>
-<wire x1="0" y1="2.159" x2="-4.3942" y2="2.159" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="2.159" x2="-4.3942" y2="4.3434" width="0.508" layer="1"/>
-<wire x1="-4.191" y1="0" x2="-1.27" y2="0" width="0.889" layer="1"/>
-<smd name="GND" x="-1.143" y="0" dx="2.54" dy="0.889" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="FEED" x="0" y="2.159" dx="0.0254" dy="0.0254" layer="1" stop="no" thermals="no" cream="no"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ANT">
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="2.54" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="0" width="0.254" layer="94"/>
-<pin name="FEED" x="0" y="0" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="GND" x="2.54" y="0" visible="pad" length="short" direction="pas" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ANTENNA" prefix="ANT">
-<gates>
-<gate name="G$1" symbol="ANT" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="RN-ANT">
-<connects>
-<connect gate="G$1" pin="FEED" pad="FEED"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="microbuilder">
 <description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
 
@@ -3082,6 +3026,135 @@ Parts Updated:
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-RF">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find things that send or receive RF- GPS, cellular modules, Bluetooth, WiFi, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="ANTENNA-CHIP2">
+<wire x1="-0.889" y1="0.508" x2="-0.889" y2="-0.508" width="0.2032" layer="21"/>
+<wire x1="0.889" y1="0.508" x2="0.889" y2="-0.508" width="0.2032" layer="21"/>
+<smd name="FEED" x="0" y="1.25" dx="1.7" dy="1" layer="1"/>
+<smd name="P$2" x="0" y="-1.25" dx="1.7" dy="1" layer="1"/>
+</package>
+<package name="ANTENNA-CHIP3">
+<wire x1="-1" y1="3.4" x2="-1" y2="2" width="0.2032" layer="21"/>
+<wire x1="-1" y1="2" x2="-1" y2="-3.4" width="0.2032" layer="21"/>
+<wire x1="1" y1="3.4" x2="1" y2="2" width="0.2032" layer="21"/>
+<wire x1="1" y1="2" x2="1" y2="-3.4" width="0.2032" layer="21"/>
+<wire x1="1" y1="2" x2="-1" y2="2" width="0.2032" layer="21"/>
+<smd name="FEED" x="0" y="4.5" dx="1.8" dy="1.5" layer="1"/>
+<smd name="NC" x="0" y="-4.5" dx="1.8" dy="1.5" layer="1"/>
+</package>
+<package name="ANTENNA-CHIP4">
+<wire x1="-4" y1="1" x2="-4" y2="-1" width="0.127" layer="51"/>
+<wire x1="-4" y1="-1" x2="4" y2="-1" width="0.127" layer="51"/>
+<wire x1="4" y1="-1" x2="4" y2="1" width="0.127" layer="51"/>
+<wire x1="4" y1="1" x2="-4" y2="1" width="0.127" layer="51"/>
+<wire x1="-3" y1="1" x2="3" y2="1" width="0.2032" layer="21"/>
+<wire x1="3" y1="-1" x2="-3" y2="-1" width="0.2032" layer="21"/>
+<circle x="-3" y="0.6" radius="0.1414" width="0.127" layer="21"/>
+<smd name="SIG" x="-4" y="0" dx="1" dy="2" layer="1"/>
+<smd name="NC" x="4" y="0" dx="1" dy="2" layer="1"/>
+<text x="-1.651" y="-0.254" size="0.6096" layer="51">152111</text>
+<text x="-4" y="-2" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-3.99" y="1.59" size="0.4064" layer="25">&gt;NAME</text>
+</package>
+<package name="ANTENNA-CHIP5">
+<wire x1="-2.413" y1="-1.143" x2="2.413" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="-2.413" y1="1.143" x2="2.413" y2="1.143" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0" x2="2.159" y2="0" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="0" x2="1.778" y2="0.381" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="0" x2="1.778" y2="-0.381" width="0.2032" layer="21"/>
+<smd name="FEED" x="-3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
+<smd name="NC" x="3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
+<text x="0.508" y="0.127" size="0.8128" layer="51">AF</text>
+<text x="-2.54" y="0.381" size="0.4064" layer="25">&gt;Name</text>
+<text x="-2.54" y="-0.762" size="0.4064" layer="27">&gt;Value</text>
+</package>
+<package name="ANTENNA-CHIP6">
+<description>Footprint for Part#1575AT43A40</description>
+<wire x1="-2.7" y1="1" x2="2.7" y2="1" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="-1" x2="2.7" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="0.3" x2="-2.6" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-0.3" x2="-1.6" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.3" x2="-1.6" y2="0.3" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="0.3" x2="-2.6" y2="0.3" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="1" x2="3.5" y2="1" width="0.127" layer="51"/>
+<wire x1="3.5" y1="1" x2="3.5" y2="-1" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-1" x2="-3.5" y2="-1" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="-1" x2="-3.5" y2="1" width="0.127" layer="51"/>
+<smd name="NC" x="3.4" y="0" dx="2" dy="0.75" layer="1" rot="R90"/>
+<smd name="1" x="-3.4" y="0" dx="2" dy="0.75" layer="1" rot="R90"/>
+<text x="-3.81" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.7" y="-1.3" size="0.4064" layer="27" rot="R180">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ANTENNA2">
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="1.27" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="SIGNAL" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ANTENNA2">
+<description>&lt;b&gt;Chip antenna&lt;/b&gt;&lt;p&gt;
+Single endded antenna. Common with smaller chip antennas. CHIP4 package is the GPS Chip Antenna &lt;b&gt;SKU:&lt;/b&gt; GPS-08418. CHIP5 package is 2.4GHz chip antenna &lt;b&gt;SKU:&lt;/b&gt; WRL-00144.</description>
+<gates>
+<gate name="G$1" symbol="ANTENNA2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="ANTENNA-CHIP2">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD2" package="ANTENNA-CHIP3">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD3" package="ANTENNA-CHIP4">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="SIG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD5" package="ANTENNA-CHIP5">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD6" package="ANTENNA-CHIP6">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3144,7 +3217,6 @@ Parts Updated:
 <part name="L3" library="SparkFun" deviceset="INDUCTOR" device="0603" value="8.2nH"/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="U4" library="SparkFun" deviceset="NRF24L01" device="SMD"/>
-<part name="ANT1" library="adafruit" deviceset="ANTENNA" device=""/>
 <part name="JPRF-A" library="nonolith" deviceset="HEADER-1X4" device="ROUND"/>
 <part name="JPRF-B" library="nonolith" deviceset="HEADER-1X4" device="ROUND"/>
 <part name="BOOT" library="nonolith" deviceset="HEADER-1X2" device="ROUND"/>
@@ -3166,6 +3238,7 @@ Parts Updated:
 <part name="LED1" library="microbuilder" deviceset="LED_RGB_PLCC6" device="CREE-CLV6A"/>
 <part name="R10" library="nonolith" deviceset="RESISTOR" device="0603" value="130o"/>
 <part name="JP1" library="nonolith" deviceset="HEADER-1X4" device="ROUND" value="PORTC"/>
+<part name="U$1" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD5"/>
 </parts>
 <sheets>
 <sheet>
@@ -3711,12 +3784,12 @@ Parts Updated:
 <attribute name="NAME" x="22.86" y="71.882" size="1.6764" layer="95"/>
 <attribute name="VALUE" x="45.466" y="72.136" size="1.6764" layer="96"/>
 </instance>
-<instance part="ANT1" gate="G$1" x="111.76" y="88.9"/>
 <instance part="JPRF-A" gate="A" x="-10.16" y="78.74"/>
 <instance part="JPRF-B" gate="A" x="-7.62" y="81.28" rot="R180"/>
 <instance part="C17" gate="G$1" x="86.36" y="22.86"/>
 <instance part="C18" gate="G$1" x="96.52" y="22.86"/>
 <instance part="C19" gate="G$1" x="106.68" y="22.86"/>
+<instance part="U$1" gate="G$1" x="111.76" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -3788,9 +3861,6 @@ Parts Updated:
 <wire x1="101.6" y1="71.12" x2="101.6" y2="73.66" width="0" layer="91"/>
 <pinref part="C13" gate="G$1" pin="P$1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="ANT1" gate="G$1" pin="GND"/>
-<wire x1="114.3" y1="88.9" x2="114.3" y2="71.12" width="0" layer="91"/>
-<wire x1="114.3" y1="71.12" x2="101.6" y2="71.12" width="0" layer="91"/>
 </segment>
 <segment>
 <pinref part="JPRF-B" gate="A" pin="1"/>
@@ -3922,12 +3992,11 @@ Parts Updated:
 <wire x1="99.06" y1="83.82" x2="101.6" y2="83.82" width="0" layer="91"/>
 <wire x1="101.6" y1="81.28" x2="101.6" y2="83.82" width="0" layer="91"/>
 <wire x1="101.6" y1="83.82" x2="111.76" y2="83.82" width="0" layer="91"/>
-<wire x1="111.76" y1="83.82" x2="111.76" y2="88.9" width="0" layer="91"/>
 <junction x="101.6" y="83.82"/>
 <label x="104.14" y="83.82" size="1.778" layer="95"/>
 <pinref part="C14" gate="G$1" pin="P$2"/>
 <pinref part="C13" gate="G$1" pin="P$2"/>
-<pinref part="ANT1" gate="G$1" pin="FEED"/>
+<pinref part="U$1" gate="G$1" pin="SIGNAL"/>
 </segment>
 </net>
 <net name="ANT1" class="0">

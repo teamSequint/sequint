@@ -828,27 +828,6 @@ package type OT</description>
 </package>
 </packages>
 </library>
-<library name="adafruit">
-<packages>
-<package name="RN-ANT">
-<wire x1="-4.3942" y1="-0.2032" x2="-4.3942" y2="2.159" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="4.3434" x2="-1.7526" y2="4.3434" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="4.3434" x2="-1.7526" y2="6.858" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="6.858" x2="-4.3942" y2="6.858" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="6.858" x2="-4.3942" y2="9.0678" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="9.0678" x2="-1.7526" y2="9.0678" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="9.0678" x2="-1.7526" y2="11.5824" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="11.5824" x2="-4.3942" y2="11.5824" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="11.5824" x2="-4.3942" y2="13.7922" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="13.7922" x2="-2.7432" y2="13.7922" width="0.508" layer="1"/>
-<wire x1="0" y1="2.159" x2="-4.3942" y2="2.159" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="2.159" x2="-4.3942" y2="4.3434" width="0.508" layer="1"/>
-<wire x1="-4.191" y1="0" x2="-1.27" y2="0" width="0.889" layer="1"/>
-<smd name="GND" x="-1.143" y="0" dx="2.54" dy="0.889" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="FEED" x="0" y="2.159" dx="0.0254" dy="0.0254" layer="1" stop="no" thermals="no" cream="no"/>
-</package>
-</packages>
-</library>
 <library name="microbuilder">
 <description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
 
@@ -1090,6 +1069,27 @@ Parts Updated:
 </package>
 </packages>
 </library>
+<library name="SparkFun-RF">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find things that send or receive RF- GPS, cellular modules, Bluetooth, WiFi, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="ANTENNA-CHIP5">
+<wire x1="-2.413" y1="-1.143" x2="2.413" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="-2.413" y1="1.143" x2="2.413" y2="1.143" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0" x2="2.159" y2="0" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="0" x2="1.778" y2="0.381" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="0" x2="1.778" y2="-0.381" width="0.2032" layer="21"/>
+<smd name="FEED" x="-3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
+<smd name="NC" x="3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
+<text x="0.508" y="0.127" size="0.8128" layer="51">AF</text>
+<text x="-2.54" y="0.381" size="0.4064" layer="25">&gt;Name</text>
+<text x="-2.54" y="-0.762" size="0.4064" layer="27">&gt;Value</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1327,7 +1327,6 @@ design rules under a new name.</description>
 <element name="C14" library="nonolith" package="0603" value="1.5pF" x="61.8718" y="56.3524"/>
 <element name="L3" library="SparkFun" package="0603" value="8.2nH" x="57.1728" y="53.7362" rot="R90"/>
 <element name="U4" library="SparkFun" package="QFN20" value="NRF24L01SMD" x="53.4898" y="53.7362"/>
-<element name="ANT1" library="adafruit" package="RN-ANT" value="ANTENNA" x="63.98" y="58.486" rot="R180"/>
 <element name="JPRF-A" library="nonolith" package="1X04_ROUND" value="" x="43.66" y="56.2" smashed="yes" rot="R90">
 <attribute name="VALUE" x="46.835" y="51.12" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -1358,6 +1357,7 @@ design rules under a new name.</description>
 <element name="LED1" library="microbuilder" package="RGBLED_PLCC6" value="" x="16.3804" y="59.8576" rot="R180"/>
 <element name="R10" library="nonolith" package="0603" value="130o" x="20.4444" y="58.3336" rot="R90"/>
 <element name="JP1" library="nonolith" package="1X04_ROUND" value="PORTC" x="11.91" y="37.15" smashed="yes" rot="R90"/>
+<element name="U$1" library="SparkFun-RF" package="ANTENNA-CHIP5" value="ANTENNA2SMD5" x="66.5" y="53" rot="R270"/>
 </elements>
 <signals>
 <signal name="CS_A">
@@ -1462,7 +1462,6 @@ design rules under a new name.</description>
 <contactref element="U4" pad="14"/>
 <contactref element="U4" pad="0"/>
 <contactref element="C13" pad="1"/>
-<contactref element="ANT1" pad="GND"/>
 <contactref element="JPRF-B" pad="1"/>
 <contactref element="CN1" pad="GND"/>
 <contactref element="U2" pad="2"/>
@@ -1621,10 +1620,6 @@ design rules under a new name.</description>
 <wire x1="13.291" y1="7.058" x2="13.291" y2="4.318" width="0.508" layer="1"/>
 <via x="7.726" y="67.011" extent="1-16" drill="0.3302"/>
 <via x="55.868" y="71.306" extent="1-16" drill="0.3302"/>
-<wire x1="65.123" y1="58.486" x2="64.488" y2="58.486" width="0.254" layer="1"/>
-<wire x1="64.488" y1="58.486" x2="63.218" y2="59.756" width="0.254" layer="1"/>
-<wire x1="63.218" y1="59.756" x2="61.186" y2="59.756" width="0.254" layer="1"/>
-<wire x1="61.186" y1="59.756" x2="60.932" y2="59.502" width="0.254" layer="1"/>
 <wire x1="60.932" y1="59.502" x2="60.932" y2="58.4234" width="0.254" layer="1"/>
 <wire x1="60.932" y1="58.4234" x2="61.0218" y2="58.5876" width="0.254" layer="1"/>
 <wire x1="22.5124" y1="52.6736" x2="22.5124" y2="54.1024" width="0.254" layer="1"/>
@@ -2442,15 +2437,15 @@ design rules under a new name.</description>
 <signal name="ANT">
 <contactref element="C14" pad="2"/>
 <contactref element="C13" pad="2"/>
-<contactref element="ANT1" pad="FEED"/>
 <wire x1="62.7218" y1="56.3524" x2="62.7218" y2="58.5876" width="0.4064" layer="1"/>
 <wire x1="62.7218" y1="56.3524" x2="62.7218" y2="56.3718" width="0.3048" layer="1"/>
 <wire x1="62.7218" y1="56.3718" x2="62.738" y2="56.388" width="0.3048" layer="1"/>
 <wire x1="63.98" y1="56.36" x2="64.008" y2="56.388" width="0.3048" layer="1"/>
-<wire x1="64.008" y1="56.388" x2="64.008" y2="56.355" width="0.254" layer="1"/>
-<wire x1="64.008" y1="56.355" x2="63.98" y2="56.327" width="0.254" layer="1"/>
 <wire x1="63.98" y1="56.36" x2="62.7294" y2="56.36" width="0.254" layer="1"/>
 <wire x1="62.7294" y1="56.36" x2="62.7218" y2="56.3524" width="0.254" layer="1"/>
+<contactref element="U$1" pad="FEED"/>
+<wire x1="62.7294" y1="56.36" x2="67" y2="56.36" width="0.6096" layer="1"/>
+<wire x1="67" y1="56.36" x2="66.5" y2="56.302" width="0.4064" layer="1"/>
 </signal>
 <signal name="ANT1">
 <contactref element="L3" pad="1"/>
