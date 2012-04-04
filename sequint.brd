@@ -148,10 +148,10 @@
 <text x="44.958" y="52.07" size="1.016" layer="25">NRF-IRQ</text>
 <text x="65.024" y="33.528" size="1.016" layer="25" align="bottom-right">3.3V</text>
 <text x="44.958" y="54.61" size="1.016" layer="25">MOSI</text>
-<text x="44.958" y="57.15" size="1.016" layer="25">NSS</text>
+<text x="44.958" y="57.15" size="1.016" layer="25">CSN</text>
 <text x="44.958" y="59.69" size="1.016" layer="25">3.3V</text>
 <text x="39.878" y="59.69" size="1.016" layer="25" align="bottom-right">GND</text>
-<text x="39.878" y="57.15" size="1.016" layer="25" align="bottom-right">NRF-CE</text>
+<text x="39.878" y="57.15" size="1.016" layer="25" align="bottom-right">CE</text>
 <text x="39.878" y="54.61" size="1.016" layer="25" align="bottom-right">SCK</text>
 <text x="39.878" y="52.07" size="1.016" layer="25" align="bottom-right">MISO</text>
 <text x="43.688" y="49.784" size="1.016" layer="25" align="bottom-right">SPI2</text>
