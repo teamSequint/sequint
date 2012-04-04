@@ -1537,8 +1537,8 @@ design rules under a new name.</description>
 <vertex x="69.822" y="0.254"/>
 <vertex x="70.866" y="41.148"/>
 <vertex x="70.866" y="41.402"/>
-<vertex x="62.484" y="41.402"/>
-<vertex x="62.23" y="60.198"/>
+<vertex x="62.357" y="41.402"/>
+<vertex x="62.357" y="60.198"/>
 <vertex x="70.612" y="60.198"/>
 <vertex x="70.358" y="80.076"/>
 <vertex x="69.822" y="80.076"/>
@@ -1585,8 +1585,8 @@ design rules under a new name.</description>
 <vertex x="0.762" y="-0.508"/>
 <vertex x="70.838" y="0.762"/>
 <vertex x="70.866" y="41.402"/>
-<vertex x="62.484" y="41.402"/>
-<vertex x="62.23" y="60.198"/>
+<vertex x="62.357" y="41.402"/>
+<vertex x="62.357" y="60.198"/>
 <vertex x="70.612" y="60.198"/>
 <vertex x="70.612" y="80.838"/>
 <vertex x="70.584" y="80.838"/>
