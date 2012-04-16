@@ -1769,6 +1769,20 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-1.62" y1="0.34" x2="-1.62" y2="0.35" width="0.127" layer="51"/>
 <circle x="2.7" y="1" radius="0.1204" width="0.127" layer="21"/>
 <circle x="-1.62" y="0.33" radius="0.2404" width="0.127" layer="51"/>
+<smd name="P$1" x="-2.7" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$2" x="-2.1" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$3" x="-1.5" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$4" x="-0.9" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$5" x="-0.3" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$6" x="0.3" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$7" x="0.9" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$8" x="1.5" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$9" x="2.1" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$10" x="2.7" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$11" x="3.55" y="0.3" dx="1" dy="0.4" layer="1"/>
+<smd name="P$13" x="3.55" y="0.9" dx="1" dy="0.4" layer="1" rot="R180"/>
+<smd name="P$12" x="-3.55" y="0.3" dx="1" dy="0.4" layer="1"/>
+<smd name="P$14" x="-3.55" y="0.9" dx="1" dy="0.4" layer="1"/>
 <smd name="10" x="-2.7" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
 <smd name="9" x="-2.1" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
 <smd name="8" x="-1.5" y="2" dx="1" dy="0.4" layer="1" rot="R90"/>
@@ -1783,6 +1797,20 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <smd name="28" x="3.55" y="0.9" dx="1" dy="0.4" layer="1" rot="R180"/>
 <smd name="12" x="-3.55" y="0.3" dx="1" dy="0.4" layer="1"/>
 <smd name="11" x="-3.55" y="0.9" dx="1" dy="0.4" layer="1"/>
+<smd name="P$29" x="2.7" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
+<smd name="P$30" x="2.1" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
+<smd name="P$31" x="1.5" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
+<smd name="P$32" x="0.9" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
+<smd name="P$33" x="0.3" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
+<smd name="P$34" x="-0.3" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
+<smd name="P$35" x="-0.9" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
+<smd name="P$36" x="-1.5" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
+<smd name="P$37" x="-2.1" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
+<smd name="P$38" x="-2.7" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
+<smd name="P$39" x="-3.55" y="-0.3" dx="1" dy="0.4" layer="1" rot="R180"/>
+<smd name="P$40" x="-3.55" y="-0.9" dx="1" dy="0.4" layer="1"/>
+<smd name="P$41" x="3.55" y="-0.3" dx="1" dy="0.4" layer="1" rot="R180"/>
+<smd name="P$42" x="3.55" y="-0.9" dx="1" dy="0.4" layer="1" rot="R180"/>
 <smd name="24" x="2.7" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
 <smd name="23" x="2.1" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
 <smd name="22" x="1.5" y="-2" dx="1" dy="0.4" layer="1" rot="R270"/>
@@ -2371,6 +2399,20 @@ Epson Toyocom FCC-255</description>
 <rectangle x1="-2" y1="0.6" x2="-1.8" y2="0.7" layer="21"/>
 <rectangle x1="-2" y1="-0.7" x2="-1.8" y2="-0.6" layer="21"/>
 </package>
+<package name="MOT_RIC_BM_CW">
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<pad name="+" x="-1.45" y="-2" drill="1.3"/>
+<pad name="-" x="1.45" y="-2" drill="1.3"/>
+<text x="-1.905" y="-0.635" size="1.27" layer="21">+</text>
+<text x="-1.27" y="0.508" size="1.016" layer="21">CW</text>
+</package>
+<package name="MOT_RIC_BM_CCW">
+<pad name="+" x="-1.45" y="-2" drill="1.3"/>
+<pad name="-" x="1.45" y="-2" drill="1.3"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<text x="-1.905" y="-0.635" size="1.27" layer="21">+</text>
+<text x="-1.778" y="0.508" size="1.016" layer="21">CCW</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PINH2X5">
@@ -2561,6 +2603,11 @@ Epson Toyocom FCC-255</description>
 <wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
 <text x="-1.524" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="MOT">
+<pin name="+" x="-5.08" y="5.08" length="middle" rot="R180"/>
+<pin name="-" x="-25.4" y="5.08" length="middle"/>
+<circle x="-15.24" y="5.08" radius="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3147,6 +3194,31 @@ Epson Toyocom FCC-255</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOT_RIC">
+<gates>
+<gate name="G$1" symbol="MOT" x="15.24" y="-5.08"/>
+</gates>
+<devices>
+<device name="CW" package="MOT_RIC_BM_CW">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CCW" package="MOT_RIC_BM_CCW">
+<connects>
+<connect gate="G$1" pin="+" pad="-"/>
+<connect gate="G$1" pin="-" pad="+"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3948,6 +4020,8 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="U$3" library="nonolith" deviceset="GND" device=""/>
 <part name="U$4" library="nonolith" deviceset="GND" device=""/>
 <part name="U$5" library="nonolith" deviceset="GND" device=""/>
+<part name="U$6" library="nonolith" deviceset="MOT_RIC" device="CW"/>
+<part name="U$7" library="nonolith" deviceset="MOT_RIC" device="CCW"/>
 </parts>
 <sheets>
 <sheet>
@@ -4834,6 +4908,8 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <instance part="U$3" gate="G$1" x="43.18" y="73.66"/>
 <instance part="U$4" gate="G$1" x="66.04" y="73.66"/>
 <instance part="U$5" gate="G$1" x="91.44" y="73.66"/>
+<instance part="U$6" gate="G$1" x="129.54" y="78.74"/>
+<instance part="U$7" gate="G$1" x="129.54" y="66.04"/>
 </instances>
 <busses>
 </busses>
