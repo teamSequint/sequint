@@ -34,9 +34,9 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -129,7 +129,7 @@
 <wire x1="70" y1="0" x2="70" y2="80" width="0" layer="20"/>
 <wire x1="70" y1="80" x2="0" y2="80" width="0" layer="20"/>
 <wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
-<rectangle x1="33.782" y1="2.794" x2="57.15" y2="10.922" layer="21"/>
+<rectangle x1="32.004" y1="2.667" x2="55.372" y2="10.795" layer="21"/>
 <text x="16.256" y="7.62" size="1.27" layer="21" ratio="12">Nonolith Labs</text>
 <text x="16.256" y="5.334" size="1.27" layer="21" ratio="12">μ4 roadkill 0.1</text>
 <text x="38.608" y="36.576" size="1.016" layer="25">INT2_G</text>
@@ -1337,11 +1337,14 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="IC1" library="stm32" package="TQFP48" value="STM32F10XCXT6" x="24.7624" y="48.1736"/>
-<element name="Q1" library="SparkFun" package="SOT23-3" value="MOSFET-NCHANNELSMD" x="4.036" y="68.011"/>
-<element name="Q2" library="SparkFun" package="SOT23-3" value="MOSFET-NCHANNELSMD" x="56.868" y="74.996" rot="R270"/>
-<element name="Q3" library="SparkFun" package="SOT23-3" value="MOSFET-NCHANNELSMD" x="66.548" y="12.192" rot="R180"/>
-<element name="Q4" library="SparkFun" package="SOT23-3" value="MOSFET-NCHANNELSMD" x="12.291" y="3.368" rot="R90"/>
+<element name="IC1" library="stm32" package="TQFP48" value="STM32F103" x="24.7624" y="48.1736" smashed="yes">
+<attribute name="NAME" x="22.2224" y="48.6816" size="1.27" layer="25"/>
+<attribute name="VALUE" x="21.8414" y="47.5386" size="0.762" layer="27"/>
+</element>
+<element name="Q1" library="SparkFun" package="SOT23-3" value="MOSFET-N" x="4.036" y="68.011"/>
+<element name="Q2" library="SparkFun" package="SOT23-3" value="MOSFET-N" x="56.868" y="74.996" rot="R270"/>
+<element name="Q3" library="SparkFun" package="SOT23-3" value="MOSFET-N" x="66.548" y="12.192" rot="R180"/>
+<element name="Q4" library="SparkFun" package="SOT23-3" value="MOSFET-N" x="12.291" y="3.368" rot="R90"/>
 <element name="JTAG" library="nonolith" package="2X05" value="" x="5.56" y="48.58" rot="R270"/>
 <element name="U1" library="nonolith" package="LGA28L" value="LSM330DLCTRLGA" x="52.042" y="28.641" rot="R90"/>
 <element name="C1" library="nonolith" package="0402" value="10nF" x="53.185" y="34.102" rot="R180"/>
@@ -1361,8 +1364,12 @@ design rules under a new name.</description>
 <element name="R4" library="nonolith" package="0402" value="1.5ko" x="22.832" y="62.296" rot="R270"/>
 <element name="U2" library="SparkFun" package="SOT23-5" value="MCP73831" x="35.278" y="70.932"/>
 <element name="R5" library="nonolith" package="0402" value="10ko" x="32.992" y="65.598" rot="R270"/>
-<element name="3.3VREG" library="nonolith" package="SOT23-3" value="VREG" x="47.978" y="66.614" rot="R180"/>
-<element name="C7" library="nonolith" package="0603" value="4.7uF" x="43.914" y="65.344"/>
+<element name="3.3VREG" library="nonolith" package="SOT23-3" value="VREG" x="47.978" y="66.614" smashed="yes" rot="R180">
+<attribute name="VALUE" x="49.883" y="70.043" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="C7" library="nonolith" package="0603" value="4.7uF" x="43.914" y="65.344" smashed="yes">
+<attribute name="NAME" x="44.168" y="63.693" size="0.762" layer="25" font="vector" ratio="10"/>
+</element>
 <element name="Q5" library="nonolith" package="HC49UP" value="16MHz" x="54.2518" y="46.8782"/>
 <element name="L1" library="SparkFun" package="C0402" value="3.9nH" x="58.1126" y="55.0062" rot="R90"/>
 <element name="C8" library="nonolith" package="0402" value="22pF" x="48.9178" y="42.0522" rot="R180"/>

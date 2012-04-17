@@ -3911,11 +3911,11 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </class>
 </classes>
 <parts>
-<part name="IC1" library="stm32" deviceset="STM32F10XCXT6" device=""/>
-<part name="Q1" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD"/>
-<part name="Q2" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD"/>
-<part name="Q3" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD"/>
-<part name="Q4" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD"/>
+<part name="IC1" library="stm32" deviceset="STM32F10XCXT6" device="" value="STM32F103"/>
+<part name="Q1" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="MOSFET-N"/>
+<part name="Q2" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="MOSFET-N"/>
+<part name="Q3" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="MOSFET-N"/>
+<part name="Q4" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value="MOSFET-N"/>
 <part name="JTAG" library="nonolith" deviceset="HEADER-2X5" device=""/>
 <part name="U1" library="nonolith" deviceset="LSM330DLCTR" device="LGA"/>
 <part name="C1" library="nonolith" deviceset="CAP_CERAMIC" device="0402" value="10nF"/>
