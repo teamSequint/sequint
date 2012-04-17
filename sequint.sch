@@ -4342,9 +4342,9 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </net>
 <net name="NRF-CE" class="0">
 <segment>
-<label x="33.02" y="73.66" size="1.778" layer="95"/>
-<pinref part="IC1" gate="PORTB_H" pin="PB9"/>
-<wire x1="30.48" y1="73.66" x2="33.02" y2="73.66" width="0" layer="91"/>
+<pinref part="IC1" gate="PORTA_H" pin="PA10"/>
+<wire x1="-5.08" y1="71.12" x2="-7.62" y2="71.12" width="0.0254" layer="91"/>
+<label x="-7.62" y="71.12" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="BOOT0" class="0">
